@@ -1,0 +1,58 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: none; /* Retire la bordure du tableau */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2; /* Ajoute une couleur de fond pour les cellules d'en-tête */
+}
+
+form {
+    max-width: 400px;
+    margin: 20px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+button.add-button {
+    background-color: #007bff; /* Boutons Ajouter en bleu */
+    color: #fff;
+}
+
+button.delete-button {
+    background-color: #dc3545; /* Boutons Supprimer en rouge */
+    color: #fff;
+}
+
+

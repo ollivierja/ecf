@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="recherchefilm.css">
+    <title>Recherche de Films</title>
+</head>
+<body>
+    <h1>Recherche de Films</h1>
+    <!-- Formulaire de recherche -->
+    <form id="searchForm">
+        <label for="searchTitle">Rechercher par Titre:</label>
+        <input type="text" id="searchTitle" name="searchTitle">
+
+        <label for="searchYear">Rechercher par Année:</label>
+        <input type="number" id="searchYear" name="searchYear">
+
+        <label for="type">Type:</label>
+        <select id="type" name="type">
+            <option value="movie">Film</option>
+            <option value="series">Série</option>
+            <option value="episode">Épisode</option>
+        </select>
+
+        <button type="button" onclick="searchMovies()">Rechercher</button>
+    </form>
+
+    <!-- Résultats de la recherche seront affichés dynamiquement avec JavaScript -->
+    <div id="results"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"></script> <!-- Utilisation de la bibliothèque Axios pour les requêtes HTTP -->
+    <script src="recherchefilm.js"></script>
+</body>
+</html>
